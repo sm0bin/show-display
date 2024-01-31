@@ -18,6 +18,7 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home />,
+        loader: async () => fetch("https://api.tvmaze.com/search/shows?q=all"),
       },
       {
         path: "/about",
