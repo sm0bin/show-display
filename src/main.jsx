@@ -8,6 +8,8 @@ import "./index.css";
 import Root from "./Root";
 import ErrorPage from "./pages/ErrorPage";
 import Home from "./pages/Home/Home";
+import Show from "./pages/Show/Show";
+import Shows from "./pages/Home/Shows";
 
 const router = createBrowserRouter([
   {
@@ -21,8 +23,14 @@ const router = createBrowserRouter([
         loader: async () => fetch("https://api.tvmaze.com/search/shows?q=all"),
       },
       {
-        path: "/about",
-        element: <h1>About</h1>,
+        path: "/shows",
+        element: <Shows />,
+        loader: async () => fetch("https://api.tvmaze.com/search/shows?q=all"),
+      },
+      {
+        path: "/shows/:id",
+        element: <Show />,
+        loader: async () => fetch("https://api.tvmaze.com/search/shows?q=all"),
       },
       {
         path: "/contact",

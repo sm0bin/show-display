@@ -4,9 +4,9 @@ import { NavLink } from 'react-router-dom';
 const Navbar = () => {
     const navLinks = [
         { title: 'Home', path: '/' },
-        { title: 'About', path: '/about' },
-        { title: 'Contact', path: '/contact' },
-        { title: 'Blog', path: '/blog' },
+        { title: 'Shows', path: '/shows' },
+        // { title: 'Contact', path: '/contact' },
+        // { title: 'Blog', path: '/blog' },
     ];
 
     const navLinksMarkup = navLinks.map((link) => (
@@ -18,9 +18,9 @@ const Navbar = () => {
     ));
 
     return (
-        <div className="navbar bg-base-100 fixed">
+        <div className="navbar bg-base-100 fixed z-50">
             <div className="flex-1">
-                <a className="btn btn-ghost text-xl font-bold">Show</a>
+                <NavLink to='/' className="btn btn-ghost text-xl font-bold">Show</NavLink>
             </div>
             <div className="flex-none">
                 <ul className="menu menu-horizontal px-1">
