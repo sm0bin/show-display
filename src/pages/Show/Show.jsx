@@ -9,7 +9,7 @@ const Show = () => {
 
     console.log(data);
     return (
-        <div className='mx-4 md:mx-5 lg:mx-auto max-w-7xl'>
+        <div className='mx-4 md:mx-5 lg:mx-auto max-w-7xl mt-40'>
             {/* {show?.show?.summary} */}
             <div dangerouslySetInnerHTML={{ __html: show?.show?.summary }} />
         </div>
