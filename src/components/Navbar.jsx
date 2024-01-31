@@ -18,7 +18,7 @@ const Navbar = () => {
     ));
 
     return (
-        <div className="navbar bg-base-100">
+        <div className="navbar bg-base-100 fixed">
             <div className="flex-1">
                 <a className="btn btn-ghost text-xl font-bold">Show</a>
             </div>

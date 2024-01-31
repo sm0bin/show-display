@@ -7,6 +7,7 @@ import {
 import "./index.css";
 import Root from "./Root";
 import ErrorPage from "./pages/ErrorPage";
+import Home from "./pages/Home/Home";
 
 const router = createBrowserRouter([
   {
@@ -16,7 +17,7 @@ const router = createBrowserRouter([
     children: [
       {
         path: "/",
-        element: <h1>Home</h1>,
+        element: <Home />,
       },
       {
         path: "/about",
